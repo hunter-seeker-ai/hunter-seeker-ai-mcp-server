@@ -1,0 +1,32 @@
+{
+  "name": "@hunter-seeker-ai/mcp-server",
+  "version": "0.1.0",
+  "description": "Hunter Seeker AI MCP Server",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "hunter-seeker-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "hunter-seeker"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "@types/node": "^22.13.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
